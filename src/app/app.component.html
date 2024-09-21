@@ -5,6 +5,7 @@
         <ion-list id="inbox-list">
           <ion-list-header>m2</ion-list-header>
           <ion-note>{{ myMale }}</ion-note>
+          <ion-button fill="outline">Test</ion-button>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">

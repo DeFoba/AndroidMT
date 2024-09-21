@@ -25,3 +25,7 @@ cd ./Maori
 npx install
 ionic serve
 ```
+
+Check [Documentation.][3]
+
+[3]: https://test-bc740.web.app/
