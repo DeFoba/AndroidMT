@@ -1,0 +1,7 @@
+{
+  "name": "Maori",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

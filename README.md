@@ -13,6 +13,15 @@
 [2]: https://code.visualstudio.com/
 
 ## Рекомендуемые библиотеки
-```cmd
+```bash
 python -m pip install numpy, opencv-python, pillow
+```
+
+## Запомнить команды
+
+```bash
+ionic start
+cd ./Maori
+npx install
+ionic serve
 ```
