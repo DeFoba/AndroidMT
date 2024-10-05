@@ -10,15 +10,16 @@
 <ion-content [fullscreen]="true">
   <ion-item>
     <ion-button (click)="add_in_list()">Add</ion-button>&nbsp;&nbsp;
-    <ion-input placeholder="Enter text" [(ngModel)]="new_item"></ion-input>
+    <ion-input placeholder="Введите фамилию:" [(ngModel)]="new_item_1"></ion-input>
+    <ion-input placeholder="Введите имя:" [(ngModel)]="new_item_2"></ion-input>
   </ion-item>
   
   <ion-list>
     <ion-item *ngFor="let i_t of l_ist" lines="full">
-      <ion-button fill="outline">Claim</ion-button>&nbsp;&nbsp;
+      <ion-button fill="outline" color="danger" (click)="delete_item(i_t.id)">DELETE</ion-button>&nbsp;&nbsp;
       <!-- <ion-icon name="{{ i_t.icon }}"></ion-icon>&nbsp;&nbsp; -->
       <ion-label>
-        {{ i_t }}
+        {{ i_t.Name1 }}&nbsp;{{ i_t.Name2 }}
       </ion-label>
     </ion-item>
   </ion-list>
