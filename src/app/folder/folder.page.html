@@ -3,62 +3,23 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>kuhioj</ion-title>
+    <ion-title>Test</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-<ion-list>
   <ion-item>
-    Dog
-    1
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
+    <ion-button (click)="add_in_list()">Add</ion-button>&nbsp;&nbsp;
+    <ion-input placeholder="Enter text" [(ngModel)]="new_item"></ion-input>
   </ion-item>
-  <ion-item>
-    Dog
-    2
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-  <ion-item>
-    Dog
-    3
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-  <ion-item>
-    Dog
-    4
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-  <ion-item>
-    Dog
-    5
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-  <ion-item>
-    Dog
-    6
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-  <ion-item>
-    Dog
-    7
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-  <ion-item>
-    Dog
-    8
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-  <ion-item>
-    Dog
-    9
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-  <ion-item>
-    Dog
-    10
-    <ion-button fill="outline" (click)="btn_click()">Bue</ion-button>
-  </ion-item>
-</ion-list>
-
+  
+  <ion-list>
+    <ion-item *ngFor="let i_t of l_ist" lines="full">
+      <ion-button fill="outline">Claim</ion-button>&nbsp;&nbsp;
+      <!-- <ion-icon name="{{ i_t.icon }}"></ion-icon>&nbsp;&nbsp; -->
+      <ion-label>
+        {{ i_t }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
